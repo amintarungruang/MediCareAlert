@@ -1,0 +1,11 @@
+<resources>
+    <!-- โทนชมพู-ม่วงแบรนด์ -->
+    <color name="ax_primary">#C55B92</color>
+    <color name="ax_secondary">#F08BB4</color>
+    <color name="ax_tertiary">#7B4B94</color>
+    <color name="ax_bg_deep">#160016</color>
+    <color name="purple_500">#9C27B0</color>
+    <color name="purple_700">#7B1FA2</color>
+    <color name="black">#090000</color>
+
+</resources>

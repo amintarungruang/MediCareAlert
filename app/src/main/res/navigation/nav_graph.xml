@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+    <action
+        android:id="@+id/action_global_medicationsFragment"
+        app:destination="@id/medicationsFragment" />
+
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.medicarealert.ui.auth.WelcomeFragment"
+        android:label="Welcome">
+        <action
+            android:id="@+id/action_signinFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_signinFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.medicarealert.ui.auth.SigninFragment"
+        android:label="Sign in" />
+
+    <action
+        android:id="@+id/action_signinFragment_to_signupFragment"
+        app:destination="@id/signupFragment"
+        app:popUpTo="@id/signinFragment"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.medicarealert.ui.auth.SignupFragment"
+        android:label="Sign up" />
+
+    <action
+        android:id="@+id/action_signupFragment_to_signinFragment"
+        app:destination="@id/signinFragment"
+        app:popUpTo="@id/signupFragment"
+        app:popUpToInclusive="true" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.medicarealert.ui.home.HomeFragment"
+        android:label="Home">
+
+        <action
+            android:id="@+id/action_home_to_meds"
+            app:destination="@id/medicationsFragment" />
+
+        <action
+            android:id="@+id/action_home_to_add"
+            app:destination="@id/addMedicineFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/updatesFragment"
+        android:name="com.example.medicarealert.ui.updates.UpdatesFragment"
+        android:label="Updates" />
+
+    <fragment
+        android:id="@+id/medicationsFragment"
+        android:name="com.example.medicarealert.ui.meds.MedicationsFragment"
+        android:label="Medications">
+
+        <action
+            android:id="@+id/action_medicationsFragment_to_addMedicineFragment"
+            app:destination="@id/addMedicineFragment" />
+        <argument
+            android:name="ownerUserId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/manageFragment"
+        android:name="com.example.medicarealert.ui.manage.ManageFragment"
+        android:label="Manage" />
+
+    <fragment
+        android:id="@+id/addMedicineFragment"
+        android:name="com.example.medicarealert.ui.add.AddMedicineFragment"
+        android:label="Add Medicine" />
+
+    <fragment
+        android:id="@+id/inviteMedfriendFragment"
+        android:name="com.example.medicarealert.ui.manage.InviteMedfriendFragment"
+        android:label="Invite Medfriend" />
+
+    <fragment
+        android:id="@+id/acceptInviteFragment"
+        android:name="com.example.medicarealert.ui.manage.AcceptInviteFragment"
+        android:label="Accept Invite">
+        <deepLink app:uri="medicare://invite" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/friendsListFragment"
+        android:name="com.example.medicarealert.ui.manage.FriendsListFragment"
+        android:label="Medfriends" />
+
+    <fragment
+        android:id="@+id/trackersFragment"
+        android:name="com.example.medicarealert.ui.trackers.TrackersFragment"
+        android:label="Health Trackers" />
+
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.example.medicarealert.ui.diary.DiaryFragment"
+        android:label="Diary" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.medicarealert.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.example.medicarealert.ui.help.HelpFragment"
+        android:label="Help &amp; Support" />
+
+</navigation>

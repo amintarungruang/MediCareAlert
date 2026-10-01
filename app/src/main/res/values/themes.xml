@@ -1,0 +1,67 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Main App Theme -->
+    <style name="Theme.MediCareAlert" parent="Theme.Material3.Light.NoActionBar">
+        <!-- ฟอนต์หลัก -->
+        <item name="fontFamily">@font/prompt</item>
+
+        <!-- สีแบรนด์ -->
+        <item name="colorPrimary">@color/ax_primary</item>
+        <item name="colorSecondary">@color/ax_secondary</item>
+        <item name="colorTertiary">@color/ax_tertiary</item>
+
+        <!-- มุมโค้งคอมโพเนนต์ -->
+        <item name="shapeAppearanceSmallComponent">@style/Shape.Radius16</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.Radius20</item>
+        <item name="shapeAppearanceLargeComponent">@style/Shape.Radius24</item>
+
+        <!-- Dialog -->
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.MCA.Dialog</item>
+    </style>
+
+    <!-- Dialog Overlay -->
+    <style name="ThemeOverlay.MCA.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="fontFamily">@font/prompt</item>
+    </style>
+
+    <!-- ===== Shapes ===== -->
+    <style name="Shape.Radius16">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="Shape.Radius20">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="Shape.Radius24">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Shape" parent="@style/Shape.Radius16" />
+
+    <style name="Widget.MCA.Button.Filled" parent="Widget.Material3.Button">
+        <item name="android:insetTop">10dp</item>
+        <item name="android:insetBottom">10dp</item>
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="Widget.MCA.Button.Tonal" parent="Widget.Material3.Button.TonalButton">
+        <item name="cornerRadius">24dp</item>
+    </style>
+    <style name="Widget.MCA.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <style name="Widget.MCA.NavigationBar" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/Widget.MCA.NavItem.ActiveIndicator</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.MCA.NavItem.ActiveIndicator">
+        <item name="shapeAppearance">@style/Shape.Radius24</item>
+        <item name="android:color">?attr/colorSecondaryContainer</item>
+    </style>
+
+    <style name="Widget.MCA.NavItem" parent="@style/Widget.MCA.NavItem.ActiveIndicator" />
+
+</resources>

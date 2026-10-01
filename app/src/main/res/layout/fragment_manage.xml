@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Guest" android:textStyle="bold" android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- SECTION: PROFILES / MEDFRIENDS -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MEDFRIENDS"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnInviteMedfriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/invite"
+            android:layout_marginTop="8dp" />
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#22000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- SECTION: LIST ITEMS -->
+        <Button
+            android:id="@+id/btnTrackers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/health_trackers_measurements" />
+
+        <Button android:id="@+id/btnDiary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diary"
+            android:layout_marginTop="8dp"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#22000000"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings" />
+
+        <Button android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/help_support"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>

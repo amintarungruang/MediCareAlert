@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MediCareAlert" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/ax_primary</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+
+    </style>
+
+</resources>
