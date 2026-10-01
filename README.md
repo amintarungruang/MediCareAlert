@@ -138,29 +138,6 @@ git clone https://github.com/yourusername/MediCareAlert.git
 
 จากนั้นกด **Run** ภายใน Android Studio เพื่อเปิดแอปพลิเคชัน
 
----
-
-## 📸 Screenshots
-
-สามารถเพิ่มภาพตัวอย่างหน้าจอของแอปพลิเคชันในส่วนนี้
-
-### Home Dashboard
-
-<!-- เพิ่มภาพหน้า Home Dashboard -->
-
-### Add Medication
-
-<!-- เพิ่มภาพหน้าเพิ่มข้อมูลยา -->
-
-### Health Record
-
-<!-- เพิ่มภาพหน้าบันทึกข้อมูลสุขภาพ -->
-
-### Login / Register
-
-<!-- เพิ่มภาพหน้าเข้าสู่ระบบหรือสมัครสมาชิก -->
-
----
 
 ## 🎯 สิ่งที่ได้รับจากโปรเจกต์
 
